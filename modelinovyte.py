@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load('/Users/furqonaryadana/Downloads/best_model_stress_predictor.joblib')
-le_dict = joblib.load('/Users/furqonaryadana/Downloads/label_encoders.joblib')
-scaler = joblib.load('/Users/furqonaryadana/Downloads/scaler.joblib')
-imputer_num = joblib.load('/Users/furqonaryadana/Downloads/imputer_num.joblib')
-imputer_cat = joblib.load('/Users/furqonaryadana/Downloads/imputer_cat.joblib')
+model = joblib.load('model/best_model_stress_predictor.joblib')
+le_dict = joblib.load('model/label_encoders.joblib')
+scaler = joblib.load('model/scaler.joblib')
+imputer_num = joblib.load('model/imputer_num.joblib')
+imputer_cat = joblib.load('model/imputer_cat.joblib')
 
 st.title("Prediksi Tingkat Stres Karyawan")
 
